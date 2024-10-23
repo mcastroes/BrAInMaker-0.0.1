@@ -10,7 +10,6 @@
 </head>
 <body>
     <div class="container">
-        <!-- Sidebar -->
         <aside class="sidebar">
             <button id="toggle-menu">Menú <i class="fa-solid fa-circle-chevron-down"></i></button> <!-- Botón de despliegue -->
             <ul id="menu-list">
@@ -32,10 +31,6 @@
             </ul>
         </aside>
 
-       
-        
-
-        <!-- Main content -->
         <main class="main-content">
             <header>
                 <a href="">
@@ -69,16 +64,14 @@
             const menuList = document.getElementById('menu-list');
     
             toggleButton.addEventListener('click', function() {
-                // Alternar la visibilidad del menú
                 if (menuList.style.display === "none" || menuList.style.display === "") {
-                    menuList.style.display = "block"; // Mostrar menú
+                    menuList.style.display = "block";
                 } else {
-                    menuList.style.display = "none"; // Ocultar menú
+                    menuList.style.display = "none";
                 }
             });
         });
     </script>
-
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -86,11 +79,10 @@
         const menuList2 = document.getElementById('menu-list2');
 
         toggleButton2.addEventListener('click', function() {
-            // Alternar la visibilidad del menú
             if (menuList2.style.display === "none" || menuList2.style.display === "") {
-                menuList2.style.display = "block"; // Mostrar menú
+                menuList2.style.display = "block";
             } else {
-                menuList2.style.display = "none"; // Ocultar menú
+                menuList2.style.display = "none";
             }
         });
     });

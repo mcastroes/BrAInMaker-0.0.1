@@ -1,21 +1,18 @@
-/* Reset margins and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General font for the entire page (Poppins) */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
 }
 
-/* Font for the logo (Judson) */
 .logo {
     display: flex;
     align-items: center;
-    font-family: 'Judson', serif; /* Mantener la fuente Judson para el logo */
+    font-family: 'Judson', serif;
 }
 
 .logo h1 {
@@ -32,16 +29,11 @@ body {
     height: auto;
 }
 
-
-
-/* Font for the logo (Judson) */
 .logo2 {
     display: flex;
     align-items: center;
-    font-family: 'Judson', serif; /* Mantener la fuente Judson para el logo */
+    font-family: 'Judson', serif; 
 }
-
-
 
 .logo2 img {
     width: 80px;
@@ -49,9 +41,6 @@ body {
     align-items: center;
 }
 
-
-
-/* Rest of your styles */
 .container {
     display: flex;
     height: 100vh;
@@ -117,9 +106,6 @@ header nav .logout {
     color: #e74c3c;
 }
 
-/* Other existing styles unchanged */
-
-
 .chatbot-section {
     background-color: #fff;
     padding: 40px;
@@ -157,11 +143,9 @@ header nav .logout {
     margin-top: 10px;
 }
 
-
-
 .chat-container {
-    width: 80%; /* Aumenta el ancho al 80% del contenedor principal */
-    max-width: 500px; /* Limita el ancho máximo para pantallas grandes */
+    width: 80%;
+    max-width: 500px;
     background-color: #E2DADA;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
@@ -172,8 +156,6 @@ header nav .logout {
     margin-bottom: 120px;
     margin-left: 250px;
 }
-
-
 
 .chat-header {
     background-color: #000000;
@@ -244,13 +226,7 @@ header nav .logout {
 }
 
 #h1Header{
-
     margin-left: 120px;
-    
-
-
-
-
 }
 
 #send-button {
@@ -280,7 +256,6 @@ header nav .logout {
     }
 }
 
-/* Scrollbar Styles */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -316,12 +291,9 @@ header nav .logout {
     display: block;
 }
 
-/* Ocultar la lista por defecto */
 #menu-list {
     display:none ; 
 }
-
-
 
 #toggle-menu{
 
@@ -332,12 +304,7 @@ header nav .logout {
     margin-left: 10px;
     cursor: pointer;
     font-size: 1rem;
-
-
-
 }
-
-
 
 #toggle-menu:hover {
     background-color: #FDBA31;
@@ -348,14 +315,11 @@ header nav .logout {
     cursor: not-allowed;
 }
 
-
 #menu-list2 {
     display:none ; 
 }
 
-
 #toggle-menu2{
-
     padding: 10px 20px;
     background-color: #ffffff;    color: #000000;
     border: none;
@@ -363,12 +327,7 @@ header nav .logout {
     margin-left: 10px;
     cursor: pointer;
     font-size: 1rem;
-
-
-
 }
-
-
 
 #toggle-menu2:hover {
     background-color: #ffffff;

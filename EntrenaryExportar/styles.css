@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* General font for the entire page (Poppins) */
 body {
 
 
@@ -12,11 +11,10 @@ body {
     background-color: #ffffff;
 }
 
-/* Font for the logo (Judson) */
 .logo {
     display: flex;
     align-items: center;
-    font-family: 'Judson', serif; /* Mantener la fuente Judson para el logo */
+    font-family: 'Judson', serif;
 }
 
 .logo h1 {
@@ -38,18 +36,12 @@ body {
 
     margin-left: 257px;
     
-
-
-
-
 }
 
-
-/* Font for the logo (Judson) */
 .logo2 {
     display: flex;
     align-items: center;
-    font-family: 'Judson', serif; /* Mantener la fuente Judson para el logo */
+    font-family: 'Judson', serif;
 }
 
 
@@ -60,9 +52,6 @@ body {
     align-items: center;
 }
 
-
-
-/* Rest of your styles */
 .container {
     display: flex;
     height: 100vh;
@@ -168,8 +157,8 @@ header nav .logout {
 
 
 .chat-container {
-    width: 80%; /* Aumenta el ancho al 80% del contenedor principal */
-    max-width: 800px; /* Limita el ancho máximo para pantallas grandes */
+    width: 80%;
+    max-width: 800px;
     background-color: #E2DADA;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
@@ -275,7 +264,6 @@ header nav .logout {
     }
 }
 
-/* Scrollbar Styles */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -311,9 +299,8 @@ header nav .logout {
     display: block;
 }
 
-/* Ocultar la lista por defecto */
 #menu-list {
-    display: none; /* El menú estará oculto inicialmente */
+    display: none;
 }
 
 #toggle-menu{
@@ -325,9 +312,6 @@ header nav .logout {
     margin-left: 10px;
     cursor: pointer;
     font-size: 1rem;
-
-
-
 }
 
 
@@ -443,9 +427,6 @@ header nav .logout {
     margin-left: 10px;
     cursor: pointer;
     font-size: 1rem;
-
-
-
 }
 
 

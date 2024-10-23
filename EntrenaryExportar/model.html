@@ -44,15 +44,12 @@
                 <div class="upload_container">
                     <h3>Añadir documentos para entrenamiento</h3>
 
-                    <!-- Input de archivo oculto -->
                     <input type="file" id="file-upload" style="display: none;" onchange="displayFileName();" />
                 
-                    <!-- Botón visible -->
                     <button class="upload-button" onclick="document.getElementById('file-upload').click();">
                         <i class="fa-solid fa-cloud-arrow-up"></i>
                     </button>
                 
-                    <!-- Elemento donde se mostrará el nombre del archivo -->
                     <span id="file-name" style="margin-left: 10px;"></span>
                    
                 </div>
@@ -62,7 +59,6 @@
                     <input type="text" placeholder="Escribe aquí...">
                 </div>
 
-                <!-- Preparar modelo button -->
                 <div class="train_container">
                     <button class="prepare-button" onclick="showGif();">Preparar modelo</button>
                 </div>
@@ -73,7 +69,6 @@
                     </button>
                 </div>
 
-                <!-- GIF container (initially hidden) -->
                 <div id="gif-container" style="display: none; margin-top: 20px;">
                     <h2> ⌛ Cargando...  </h2> 
                 </div>
@@ -84,19 +79,15 @@
     </div>
 
     <script>
-        // Función para mostrar el GIF
         function showGif() {
-            // Mostrar el contenedor del GIF
             const gifContainer = document.getElementById("gif-container");
             gifContainer.style.display = "block";
             
-            // Opcionalmente puedes redirigir después de unos segundos
             setTimeout(function() {
                 window.location.href = '../ModeloEntrenado/index2.html';
-            }, 2000); // Espera de 2 segundos antes de redirigir
+            }, 2000);
         }
 
-        // Menú desplegable 1
         document.addEventListener("DOMContentLoaded", function() {
             const toggleButton = document.getElementById('toggle-menu');
             const menuList = document.getElementById('menu-list');
@@ -110,7 +101,6 @@
             });
         });
 
-        // Menú desplegable 2
         document.addEventListener("DOMContentLoaded", function() {
             const toggleButton2 = document.getElementById('toggle-menu2');
             const menuList2 = document.getElementById('menu-list2');
