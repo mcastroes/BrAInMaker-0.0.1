@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrAInMaker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <button id="toggle-menu">Menú <i class="fa-solid fa-circle-chevron-down"></i></button>
+            <ul id="menu-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="EntrenaryExportar/model.html">Modelar nueva IA</a></li>
+                <li><a href="../index.html">Asistencia WEB</a></li>
+
+                <button id="toggle-menu2">Biblioteca de IAs <i class="fa-solid fa-circle-chevron-down"></i></button>
+                <ul id="menu-list2">
+                    <li><a href="../ModeloEntrenado/index2.html">Profesor de Matematicas</a></li>
+                    <li><a href="#">Entrenador Personal</a></li>
+                    <li><a href="#">Programador</a></li>
+                    <li><a href="#">Emprendimiento</a></li>
+                    <li><a href="#">Ayuda en Sostenibilidad</a></li>
+                    <li><a href="#">Big Data Teacher</a></li>
+                </ul>
+            </ul>
+        </aside>
+        
+        <main class="main-content">
+            <header>
+                <a href="">
+                    <img src="a.jpeg" alt="Header BrAInMaker" style="width: 100%; height: auto;">
+                </a>
+            </header>
+            
+            <div class="model_container">
+                <div class="input_container">
+                    <h3>Nombre que le quieres dar:</h3>
+                    <input type="text" placeholder="Escribe aquí...">
+                </div>
+
+                <div class="upload_container">
+                    <h3>Añadir documentos para entrenamiento</h3>
+
+                    <!-- Input de archivo oculto -->
+                    <input type="file" id="file-upload" style="display: none;" onchange="displayFileName();" />
+                
+                    <!-- Botón visible -->
+                    <button class="upload-button" onclick="document.getElementById('file-upload').click();">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </button>
+                
+                    <!-- Elemento donde se mostrará el nombre del archivo -->
+                    <span id="file-name" style="margin-left: 10px;"></span>
+                   
+                </div>
+                
+                <div class="input_container">
+                    <h3>Escribe que quieres que haga tu nueva IA</h3>
+                    <input type="text" placeholder="Escribe aquí...">
+                </div>
+
+                <!-- Preparar modelo button -->
+                <div class="train_container">
+                    <button class="prepare-button" onclick="showGif();">Preparar modelo</button>
+                </div>
+
+                <div class="export_container">
+                    <button class="export-button">
+                        Exportar modelo <i class="fa-solid fa-download"></i>
+                    </button>
+                </div>
+
+                <!-- GIF container (initially hidden) -->
+                <div id="gif-container" style="display: none; margin-top: 20px;">
+                    <h2> ⌛ Cargando...  </h2> 
+                </div>
+            </div>
+        </main>
+
+        <h2></h2>
+    </div>
+
+    <script>
+        // Función para mostrar el GIF
+        function showGif() {
+            // Mostrar el contenedor del GIF
+            const gifContainer = document.getElementById("gif-container");
+            gifContainer.style.display = "block";
+            
+            // Opcionalmente puedes redirigir después de unos segundos
+            setTimeout(function() {
+                window.location.href = '../ModeloEntrenado/index2.html';
+            }, 2000); // Espera de 2 segundos antes de redirigir
+        }
+
+        // Menú desplegable 1
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleButton = document.getElementById('toggle-menu');
+            const menuList = document.getElementById('menu-list');
+
+            toggleButton.addEventListener('click', function() {
+                if (menuList.style.display === "none" || menuList.style.display === "") {
+                    menuList.style.display = "block"; 
+                } else {
+                    menuList.style.display = "none";
+                }
+            });
+        });
+
+        // Menú desplegable 2
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleButton2 = document.getElementById('toggle-menu2');
+            const menuList2 = document.getElementById('menu-list2');
+
+            toggleButton2.addEventListener('click', function() {
+                if (menuList2.style.display === "none" || menuList2.style.display === "") {
+                    menuList2.style.display = "block"; 
+                } else {
+                    menuList2.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+<script>
+    function displayFileName() {
+        const input = document.getElementById('file-upload');
+        const fileName = document.getElementById('file-name');
+        
+        if (input.files.length > 0) {
+            fileName.textContent = `Archivo seleccionado: ${input.files[0].name}`;
+        } else {
+            fileName.textContent = 'No se ha seleccionado ningún archivo';
+        }
+    }
+</script>
+</body>
+</html>
