@@ -1,11 +1,8 @@
 const API_KEY = 'AIzaSyA8nxYLp4xGRdTsFS7bHzpyleVNpWb0C8M'; 
- 
 const API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent';
  
 const chatMessages = document.getElementById('chat-messages');
- 
 const userInput = document.getElementById('user-input');
- 
 const sendButton = document.getElementById('send-button');
  
 async function generateResponseFromBot(prompt) {
