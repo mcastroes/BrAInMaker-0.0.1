@@ -35,7 +35,7 @@ function appendMessage(message, isUser) {
  
     const profileImage = document.createElement('img');
     profileImage.className = 'profile-image';
-    profileImage.src = isUser ? 'user.png' : 'bot.png';
+    profileImage.src = isUser ? '../multimedia/user.png' : '../multimedia/bot.png';
     profileImage.alt = isUser ? 'User' : 'Bot';
  
     const messageContent = document.createElement('div');
